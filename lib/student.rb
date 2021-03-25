@@ -25,7 +25,7 @@ class Student
       #WHERE name = ?
       LIMIT 1
       SQL
-    DB[:conn].execute(sql, name).each |student|
+    DB[:conn].execute(sql, name).each |row|
     
     end
   end
