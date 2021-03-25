@@ -102,6 +102,7 @@ class Student
       SELECT *
       FROM students
       WHERE grade = 10
+      GROUP BY grade
       HAVING Min(ID)
     SQL
     DB[:conn].execute(sql).map do |row|
