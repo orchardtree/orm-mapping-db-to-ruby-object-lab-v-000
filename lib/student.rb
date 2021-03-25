@@ -25,7 +25,9 @@ class Student
       #WHERE name = ?
       LIMIT 1
       SQL
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql, name).each |student|
+    
+    end
   end
   
   def save
