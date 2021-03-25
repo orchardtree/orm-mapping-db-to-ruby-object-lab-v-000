@@ -23,7 +23,7 @@ class Student
       SELECT *
       FROM students
       WHERE name = ?
-    SQL 
+      SQL 
     DB[:conn].execute(sql)
   end
   
