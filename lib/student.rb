@@ -67,7 +67,7 @@ class Student
     end
   end
   
-  def 
+  def self.students
 end
 
 
